@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  background-image: url(assets/images/frontend\ img.svg);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 90%;
+  background: rgb(245, 242, 242);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input {
+  width: 70px;
+  padding: 10px;
+  border: 0.5px solid rgb(207, 198, 198);
+  border-radius: 3px;
+  font-weight: 600;
+}
+.age__cont {
+  width: 60%;
+
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  border-bottom-right-radius: 20%;
+  background: white;
+  padding: 20px;
+}
+.date {
+  display: flex;
+  gap: 30px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+}
+.display {
+  display: ;
+}
+.display p {
+  font-size: 30px;
+  line-height: 0;
+}
+.display span {
+  color: blueviolet;
+}
+
+.material-symbols-outlined {
+  background: blueviolet;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+}
+label {
+  font-size: 12px;
+}
+.day p {
+  font-size: 12px;
+  display: none;
+  color: red;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  input {
+    width: 30px;
+    padding: 5px;
+  }
+  input::-webkit-inner-spin-button {
+    appearance: none;
+  }
+  .date {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="age__cont">
+        <div class="date">
+          <div class="day">
+            <label for="day" class="days" id="day2">DAY</label>
+            <input type="number" name="day" id="day" />
+            <p class="error1">Must be a valid day</p>
+          </div>
+          <div class="day" id="months">
+            <label for="day2" class="day34">MONTH</label>
+            <input type="number" name="day2" id="month" />
+            <p class="error2">Must be a valid month</p>
+          </div>
+          <div class="day" id="years">
+            <label for="day3" class="day3">YEAR</label>
+            <input type="number" name="day3" id="year" />
+            <p class="error3">Must be in the past</p>
+          </div>
+        </div>
+
+        <div class="icon">
+          <span
+            class="material-symbols-outlined"
+            onclick="cal()"
+            onclick="you()"
+            onclick="me"
+          >
+            align_flex_center
+          </span>
+        </div>
+        <div class="display">
+          <p class="num1"><span>--</span> years</p>
+
+          <p class="num2"><span>--</span> months</p>
+
+          <p class="num3"><span>--</span> days</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
