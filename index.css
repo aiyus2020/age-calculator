@@ -44,14 +44,11 @@ input {
   flex-direction: column;
 }
 .display {
-  display: ;
+  font-weight: 600;
 }
 .display p {
   font-size: 30px;
   line-height: 0;
-}
-.display span {
-  color: blueviolet;
 }
 
 .material-symbols-outlined {
@@ -60,7 +57,12 @@ input {
   border-radius: 50%;
   color: white;
   padding: 5px;
+  transition: 0.5s ease;
 }
+.material-symbols-outlined:hover {
+  transform: scale(1.2);
+}
+
 label {
   font-size: 12px;
 }
@@ -74,6 +76,7 @@ label {
   align-items: center;
   margin: auto;
   justify-content: center;
+  margin-top: 5px;
 }
 @media screen and (max-width: 600px) {
   input {
