@@ -10,11 +10,12 @@ let yearerror = document.querySelector(".error3");
 let day1 = document.querySelector("#day2");
 let day2 = document.querySelector("#months");
 let day3 = document.querySelector("#years");
+let displays = document.querySelector('.display')
 let date = new Date();
 let years = date.getFullYear();
 let months = date.getMonth() + 1;
 let days = date.getDate();
-console.log(days);
+
 
 function cal() {
     dayval();
@@ -28,6 +29,7 @@ function cal() {
     calmon();
 
     calday();
+displays.style.display ='block' // to disply output  
 
     //calculation for years
     function calyr() {
@@ -45,7 +47,10 @@ function cal() {
 
     //calculation for month
     function calmon() {
-        let cal__month = months - month.value;
+        let cal__month =12 - month.value ;
+        if (cal__month < months || month.value === 12){
+            cal__month += months 
+        }
         display2__year.innerHTML = cal__month;
 
         if (month.value < 1 || month.value > 12) {
@@ -56,7 +61,7 @@ function cal() {
 
     //calculation for day
     function calday() {
-        let cal__days = days - day.value;
+        let cal__days = days
         display3__year.innerHTML = cal__days;
 
         if (day.value < 1 || day.value > 31) {
@@ -122,5 +127,6 @@ function reload() {
     month.value = "";
     day.value = "";
     year.value = "";
+    displays.style.display ='none'
 }
 reload();

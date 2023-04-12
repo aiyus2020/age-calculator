@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
 body {
   background-image: url(assets/images/frontend\ img.svg);
   height: 100vh;
@@ -25,7 +24,7 @@ input {
 .age__cont {
   width: 60%;
 
-  height: 60%;
+  height: fit-content;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,11 +43,12 @@ input {
   flex-direction: column;
 }
 .display {
+  display: none;
 }
 .display p {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 0;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .material-symbols-outlined {
