@@ -22,7 +22,7 @@ input {
   font-weight: 600;
 }
 .age__cont {
-  width: 60%;
+  width: fit-content;
 
   height: fit-content;
   position: absolute;
