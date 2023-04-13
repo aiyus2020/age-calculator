@@ -40,7 +40,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 0px;
-  color: gray;
+  color: rgb(184, 170, 170);
   font-size: 14px;
 }
 .tag span {
