@@ -107,4 +107,7 @@ label {
   .display p {
     font-size: 30px;
   }
+  .age__cont {
+    width: 90%;
+  }
 }
