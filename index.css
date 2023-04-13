@@ -104,4 +104,7 @@ label {
   .date {
     gap: 10px;
   }
+  .display p {
+    font-size: 30px;
+  }
 }
