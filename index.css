@@ -9,7 +9,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 80%;
+  height: 90%;
   width: 90%;
   background: rgb(245, 242, 242);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -33,6 +33,18 @@ input {
   border-bottom-right-radius: 20%;
   background: white;
   padding: 20px;
+}
+.tag {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 0px;
+  color: gray;
+  font-size: 14px;
+}
+.tag span {
+  color: blueviolet;
 }
 .date {
   display: flex;
