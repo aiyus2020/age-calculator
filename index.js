@@ -15,21 +15,27 @@ let date = new Date();
 let years = date.getFullYear();
 let months = date.getMonth() + 1;
 let days = date.getDate();
-
+let Canvas = document.querySelector('.can')
 
 function cal() {
-    dayval();
+    let dayss = dayval();
 
-    monthval();
+     let monthss = monthval();
 
-    yearval();
+    let yearss = yearval();
+    if(!dayss || !monthss || !yearss) return
 
     calyr();
 
     calmon();
 
     calday();
+
     displays.style.display = 'block' // to disply output  
+    Canvas.style.display = 'block';
+    setTimeout(function () {
+        Canvas.style.display = 'none';
+    }, 8000);
 
     //calculation for years
     function calyr() {
@@ -71,8 +77,9 @@ function cal() {
         if (day.value < 1 || day.value > 31) {
             display3__year.innerHTML = "--";
         }
+        day.value = "";
     }
-    day.value = "";
+    
 }
 
 //validation for month_input
@@ -132,5 +139,6 @@ function reload() {
     day.value = "";
     year.value = "";
     displays.style.display = 'none'
+    Canvas.style.display = 'none';
 }
 reload();
