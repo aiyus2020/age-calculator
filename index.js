@@ -29,7 +29,7 @@ function cal() {
     calmon();
 
     calday();
-displays.style.display ='block' // to disply output  
+    displays.style.display = 'block' // to disply output  
 
     //calculation for years
     function calyr() {
@@ -47,9 +47,9 @@ displays.style.display ='block' // to disply output
 
     //calculation for month
     function calmon() {
-        let cal__month =12 - month.value ;
-        if (cal__month < months || month.value === 12){
-            cal__month += months 
+        let cal__month = months - month.value;
+        if (month.value > months ) {
+            cal__month +=  12
         }
         display2__year.innerHTML = cal__month;
 
@@ -61,7 +61,11 @@ displays.style.display ='block' // to disply output
 
     //calculation for day
     function calday() {
-        let cal__days = days
+        let cal__days = days - day.value
+
+        if (day.value > days) {
+            cal__days += 31
+        }
         display3__year.innerHTML = cal__days;
 
         if (day.value < 1 || day.value > 31) {
@@ -127,6 +131,6 @@ function reload() {
     month.value = "";
     day.value = "";
     year.value = "";
-    displays.style.display ='none'
+    displays.style.display = 'none'
 }
 reload();
