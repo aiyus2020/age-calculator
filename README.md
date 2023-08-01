@@ -1,5 +1,5 @@
 visit site 👉 https://aiyus2020.github.io/age-calculator/
-# Frontend Mentor - Age calculator app
+# Frontend Mentor - Age calculator apps
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
